@@ -4778,7 +4778,7 @@ namespace FPS
 
             Debug.WriteLine("TRYING TO PRINT... REPORT + " + Printer.iStatus);
 
-            if (Printer.iStatus == 0)
+            if (Printer.iStatus == 1)
             {
                 sReport = "";
                 sReportTime = lEodReports[iPassIndex].sReportTime;
@@ -4854,7 +4854,7 @@ namespace FPS
                     }
                     sReport = sReport + "\n\n\n\n\n\n\n\n";
 
-                    MessageBox.Show(sReport+"");
+                  //  MessageBox.Show(sReport+"");
 
                     Printer.sReceipt = sReport;
                     CenCom.bPrintRequest = true;
